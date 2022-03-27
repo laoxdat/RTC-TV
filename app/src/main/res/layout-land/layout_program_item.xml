@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="3dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+    <LinearLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:gravity="clip_horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/button_focus">
+        <TextView
+            android:id="@+id/program_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/red_600"
+            tools:text="12:20" />
+        <TextView
+            android:id="@+id/program_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            tools:text="@string/regular_program"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:id="@+id/live_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:drawableStart="@drawable/ic_fiber_manual_record_red"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/live"
+            android:textColor="@color/red_600"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
